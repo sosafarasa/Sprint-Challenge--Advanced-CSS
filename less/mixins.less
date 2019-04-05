@@ -10,7 +10,7 @@
     align-items: center;
 }
 
-.button-creator(@width, @height, @font-size) {
+.button-creator(@width, @height, @font-size){
     width: @width;
     height: @height;
     background-color: @btn-bg-color;
@@ -19,15 +19,14 @@
     border-radius: 5px;
     .center();
 
-    @media @phone{
+    &:hover {
+    background: gray;
+    color: @btn-bg-color;
+    }
+
+        @media @phone{
         width: 100%;
         height: 70px;  
         margin-bottom: 20px;
     }
-  
-    
-    &:hover {
-        background: gray;
-        color: @btn-bg-color;
-      }
-  }
+}
